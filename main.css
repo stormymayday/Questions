@@ -287,3 +287,83 @@ Questions
 .questions {
     margin-top: 10rem;
 }
+
+.questions .title {
+    color: var(--gold);
+    font-family: 'Great Vibes', cursive;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--fixed-width);
+    margin-top: 3rem;
+}
+
+.question {
+    background-color: var(--white);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-title p {
+    margin: 0;
+    letter-spacing: var(--letterSpacing);
+    color: var(--grey-900);
+}
+
+.question-btn {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--gold);
+    transition: var(--transition);
+}
+
+.question-btn:hover {
+    transform: rotate(90deg);
+}
+
+.question-text {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p {
+    margin: 0;
+    color: var(--grey-500);
+}
+
+/* hide text */
+.question-text {
+    display: none;
+}
+
+.minus-icon {
+    display: none;
+}
+
+/* if show-text is present - display question-text */
+.show-text .qusetion-text {
+    display: block;
+}
+
+/* if show-text is present - display minus-icon */
+.show-text .minus-icon {
+    display: inline;
+}
+
+/* if show-text is present - hide plus-icon */
+.show-text .plus-icon {
+    display: none;
+}
