@@ -354,7 +354,7 @@ Questions
 }
 
 /* if show-text is present - display question-text */
-.show-text .qusetion-text {
+.show-text .question-text {
     display: block;
 }
 
