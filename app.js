@@ -22,6 +22,14 @@ questions.forEach(function (question) {
 
     btn.addEventListener('click', function () {
 
+        questions.forEach(function (article) {
+
+            if (article !== question) {
+                article.classList.remove('show-text');
+            }
+
+        });
+
         question.classList.toggle('show-text');
 
     });
